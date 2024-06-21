@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            width: 100%;
+            height: 100px;
+            background-color:#444;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            margin-bottom: 20px;
+        }
+
+        nav{
+            height: 50px;
+            width: 100%;
+            background-color: #777;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            margin-bottom: 20px;
+        }
+        nav a{
+            text-decoration: none;
+            display: inline-block;
+            color: #fff;
+            padding: 0 25px;
+            font-family: sans-serif;
+        }
+        section{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 330px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .left{
+            width: calc(60% - 10px);
+            background-color: black;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .right{
+            width: calc(40% - 10px);
+            background-color: rgb(75, 25, 25);
+            padding: 20px;
+            color: #fff;
+        }
+
+        .aside , .aside1{
+            height: calc(50% - 10px);
+            width: 100%;
+            background-color: #555;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 30px;
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My Website</h2>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <div class="left"><p>This is left div</p></div>
+        <div class="right"><p>This is Right div</p>
+            <div class="aside">Right 1</div>
+            <div class="aside1">Right 2</div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 My Website .
+    </footer>
+</body>
+</html>

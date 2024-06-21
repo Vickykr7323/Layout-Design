@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 12</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #parent{
+            width: 60%;
+            height: 100px;
+            margin: auto;
+        }
+
+        #child{
+            width: 100%;
+            height: 50px;
+            background-color: gray;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #logo{
+            width: calc(30% - 5px);
+            height: 50px;
+            background-color: gray;
+            padding: 10px;
+            line-height: 50px;
+        }
+
+        #logo img{
+            border-radius: 50%;
+            height: 30px;
+        }
+
+        #nav{
+            height: 50px;
+            width: calc(70% - 5px);
+            background-color: #0c2181;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+        }
+        #nav a{
+            text-decoration: none;
+            display: inline-block;
+            color: #fff;
+            padding: 0 5px;
+            font-family: sans-serif;
+        }
+
+        .row{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .col{
+            width: calc(20% - 5px);
+            height: 100px;
+            background-color: #0c2181;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .boxes{
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            background-color: aqua;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .box{
+            width: calc(33.33% - 10px);
+            background-color: gray;
+            text-align: center;
+
+        }
+
+        footer{
+            width: 100%;
+            height: 90px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            line-height: 90px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <div id="logo"> <img src="nature.jpeg"></div>
+
+            <div id="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+    </div>
+    <div class="row">
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+    </div>
+    <div class="row">
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+    </div>
+    <div class="row">
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+    </div>
+
+    <div class="boxes">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+
+    <footer>
+        &copy; 2024 My Website .
+    </footer>
+    
+</body>
+</html>
